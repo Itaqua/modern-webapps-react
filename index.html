@@ -1,25 +1,3 @@
-README
-
-
-  npm install -save-dev webpack 
-  npm install -save-dev react
-
-
-Vamos a agregar una librería de Hot Reload
-
-  npm install --save-dev hjs-webpack
-
-Instalamos dependencias:
-  
-  npm i --save autoprefixer babel babel-loader css-loader json-loader postcss-loader react react-hot-loader style-loader stylus-loader url-loader webpack-dev-server yeticss
-
-Configuramos...
-
-
-
-
-=== SCRIPT ========
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,17 +9,20 @@ Configuramos...
   </head>
   <body>
     <div id="example"></div>
+    <div id="example2"></div>
     <script type="text/babel">
+      //JSX
       React.render(
-        <div>Hola Mundo!</div>,
+        <div>Hola Mundo Feliz!</div>,
         document.getElementById('example')
       );
+
+      //JS Puro
       React.render(
         React.createElement("h1", null, "Hola Mundo!"), 
-        document.getElementById('example')
+        document.getElementById('example2')
       );
+      
     </script>
   </body>
 </html>
-
-
